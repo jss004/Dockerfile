@@ -11,4 +11,4 @@ COPY . /app
 EXPOSE ${PORT:-8080}
 
 # Start PHP built-in server on Render's $PORT
-CMD ["php", "-S", "0.0.0.0:${PORT:-8080}", "autoresponder.php"]
+CMD ["php", "-S", "0.0.0.0:${PORT:-8080}", "index.php"]
